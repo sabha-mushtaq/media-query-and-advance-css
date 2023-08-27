@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query 1</title>
+    
+    <style>
+        /* styling nav bar on big screen */
+.nav{background-color: rgb(65, 5, 65);height: 60px;}
+#s{margin-top: -38px;}
+h1{color: skyblue;}
+li{display: inline;padding: 25px;color: antiquewhite;}
+ul{margin-top: -70px;text-align: center;}
+button{float: right;margin-top: -30px;height: 30px;width: 80px;background-color: skyblue;color: aliceblue;border-radius: 5px;}
+svg{height: 40px;width: 40px;float: right;margin-top: -30px;margin-right: 10px;opacity: 0;}
+.g{width: 150px;height: 300px;border: solid black;margin-top: -25px;float: right;background-color: aquamarine;display: flex;flex-direction: column;opacity: 0;}
+#d{color: brown;}
+
+/* styling nav bar on small screen */
+@media screen and (max-width:576px) {  
+    ul,button{display: none;}
+    li{display: block;float: right;}
+    svg{height: 40px;width: 40px;float: right;margin-top: -70px;margin-right: 10px;opacity: 1;background-color: skyblue;}
+ .g:hover{opacity: 1;}
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- main nav bar -->
+    <div class="nav">
+        <h1>LO</h1>
+    <h1 id="s">GO</h1>
+   <ul>
+    <li>home</li>
+    <li>blog</li>
+    <li>about</li>
+    <li>contact</li>
+   </ul>
+   <button>login</button>
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+
+    </div>
+    <!-- nav bar visible on hover -->
+    <div class="g">
+        <ol>
+            <li id="d">home</li>
+            <li id="d">blog</li>
+            <li id="d">about</li>
+            <li id="d">contact</li>
+           </ol >
+    
+    
+    
+    </div>
+
+</body>
+</html>
