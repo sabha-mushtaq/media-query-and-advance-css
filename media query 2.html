@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query 2</title>
+    
+    <style>
+        /* styling nav bar on big screen */
+.nav{background-color: rgb(65, 5, 65);height: 60px;}
+#s{margin-top: -38px;}
+h1{color: skyblue;}
+li{display: inline;padding: 25px;color: antiquewhite;}
+ul{margin-top: -70px;text-align: center;}
+button{float: right;margin-top: -30px;height: 30px;width: 80px;background-color: skyblue;color: aliceblue;border-radius: 5px;}
+svg{height: 40px;width: 40px;float: right;margin-top: -30px;margin-right: 10px;opacity: 0;}
+
+#d{color: brown;}
+/* styling div item1 */
+.item2{background-image: url(https://images.cnbctv18.com/wp-content/uploads/2020/08/OneCard-768x898.jpg);background-repeat: no-repeat;background-size: cover;}
+.k{height: 70px;width: 300px;background-image: url(https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png);background-repeat: no-repeat;background-size: cover;margin-left: 15px;}
+p,#a,h2{margin-left: 15px;}
+.l{color: skyblue;}
+/* styling video */
+video{height: 200px;width: 300px;}
+/* styling nav bar on small screen */
+@media screen and (max-width:576px) {  
+    ul,button{display: none;}
+    li{display: block;float: right;}
+    svg{height: 40px;width: 40px;float: right;margin-top: -70px;margin-right: 10px;opacity: 1;background-color: skyblue;}
+    
+}
+/* styling con */
+.con{height: 550px;width: 1333px;display: flex;flex-direction: row;justify-content: space-around;}
+.item1{height: 500px;width: 650px;margin-top: 15px;}
+.item2{height: 500px;width: 550px;margin-top: 5px;}
+@media screen and (max-width:576px) {
+    .con{display: flex;flex-direction: column;height: auto;width: auto;}
+    .item1{height: 250px;width: auto;}
+    .item2{height: 350px;width: auto;}
+}
+
+    </style>
+</head>
+<body>
+    <!-- main nav bar -->
+    <div class="nav">
+        <h1>LO</h1>
+    <h1 id="s">GO</h1>
+   <ul>
+    <li>home</li>
+    <li>blog</li>
+    <li>about</li>
+    <li>contact</li>
+   </ul>
+   <button>login</button>
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+
+    </div>
+     <div class="con">
+        <div class="item1"><h2>SAY HI TO</h2>
+        <h1 id="a">ONE CARD</h1>
+        <h3 id="a" class="l">co-branded card issuers :</h3>
+        <div class="k"></div>
+        <p>india's best metal credit card,build with full-stack tech.Backed by the principles of simplicity,transparencyand giving back control to user.</p>
+        </div>
+        <div class="item2"><video src="/media query/onecard.mp3" controls autoplay muted></video></div>
+    </div>
+    
+    
+   
+
+</body>
+</html> 
