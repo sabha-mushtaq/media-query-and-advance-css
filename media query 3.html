@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query 3</title>
+    <style>
+.item2{background-image: url(https://images.cnbctv18.com/wp-content/uploads/2020/08/OneCard-768x898.jpg);background-repeat: no-repeat;background-size: cover;}
+.k{height: 70px;width: 300px;background-image: url(https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png);background-repeat: no-repeat;background-size: cover;margin-left: 15px;}
+p,#a,h2{margin-left: 15px;}
+.l{color: skyblue;}
+/* styling con  on big screen*/ 
+.con{height: 480px;width: 1333px;display: flex;flex-direction: row;justify-content: space-around;margin-top: -150px;}
+.item1{height: 500px;width: 650px;margin-top: 15px;}
+.item2{height: 500px;width: 550px;margin-top: 5px;}
+/* styling sub div */
+.sub{height: 300px;width: 1333px;background-color: black;margin-top: 23px;}
+.t{text-align: center;color: blue;padding-top: 52px;}
+.a{text-align: center;color: white;}
+/* on small screen */
+@media screen and (max-width:576px){  .item1{display: none;}
+.item2{margin-top: -200px;}
+   .con{justify-content: start;width: auto;}                                       
+.sub{background-color: aliceblue;text-align: start;width: auto;}
+.a{color: black;}
+.t{color: blue;}
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="item1"><h2>SAY HI TO</h2>
+        <h1 id="a">ONE CARD</h1>
+        <h3 id="a" class="l">co-branded card issuers :</h3>
+        <div class="k"></div>
+        <p>india's best metal credit card,build with full-stack tech.Backed by the principles of simplicity,transparencyand giving back control to user.</p>
+        </div>
+        <div class="item2"></div>
+    </div>
+    <div class="sub">
+        
+        <h1 class="t">NO HIDDEN FEES EVER</h1>
+    <h3 class="a">NO JOINING FEES</h3>
+    <h3 class="a">NO ANNUAL FEES</h3>
+    <h3 class="a">NO REWARDS REDEMPTION FEES</h3>
+    
+    </div>
+</body>
+</html>
