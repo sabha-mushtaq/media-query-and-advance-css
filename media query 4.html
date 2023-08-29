@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query 4</title>
+<style>
+    /* styling for large screen */
+    .con{display: grid;grid-template-rows: repeat(7,1fr);}
+    #a{border: solid white;height: 50px;width: 1333px;}
+    h2{display: inline;margin-left: 50px;padding: 150px;color: white;}
+    h3{display: inline;margin-left: 20px;padding: 150px;color: white;}
+    body{background-color: black;}
+    h1{color: white;}
+    /* styling for small screen */
+    @media screen and (max-width:576px){
+.con{overflow: scroll;}
+
+    }
+</style>
+
+
+</head>
+<body>
+    <h1>STUDENT DASHBOARD</h1>
+    <div class="con">
+        <div class="item1"  id="a"><h2>name</h2>
+        <h2>email</h2>
+        <h2>phone</h2></div>
+        <div class="item2"  id="a"><h3>rahul</h3>
+        <h3>ruhulsharma8.com</h3>
+        <h3>52859475</h3></div>
+        <div class="item3"  id="a"><h3>anjali </h3>
+        <h3>anjalimeht77.com</h3>
+        <h3>78653488</h3></div>
+        <div class="item4"  id="a"><h3>sanje  </h3>
+        <h3>sanhjcha8a09.com</h3>
+        <h3>123688908</h3></div>
+        <div class="item5"  id="a"><h3>payal</h3>
+        <h3>payalvaga679.com</h3>
+        <h3>8976898798</h3></div>
+        <div class="item6"  id="a"><h3>malhorta</h3>
+        <h3>mayrty796.com</h3>
+        <h3>5698987679</h3></div>
+        <div class="item7"  id="a"><h3>dawar</h3>
+        <h3>dawaruyt78765.com</h3>
+        <h3>9087898909</h3></div>
+    </div>
+</body>
+</html>
