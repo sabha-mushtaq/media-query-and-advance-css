@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query 6</title>
+<style>
+    /* styling for big screen */
+.con{display: flex;flex-direction: row;height: 450px;width: 1333px;border: solid black;justify-content: space-around;align-items: center;}
+#a{width: 400px;height: 300px;background-color: black;}
+.item1{word-spacing: 13px;}
+ul{list-style: none;}
+li{padding: 15px;}
+h1{margin-left: 15px;color: aliceblue;}
+p{color: rgb(44, 75, 102);padding-left: 10px;padding-top: 15px;}
+a{text-decoration: none;color: rgb(40, 53, 65);}
+input{width: 350px;height: 40px;margin-bottom: 10px;border-radius: 7px;}
+button{width: 360px;height: 40px;background-color: blue;color: aliceblue;border-radius: 7px;}
+/* styling for small screen */
+@media screen and (max-width:576px){
+    .con{display: flex;flex-direction: column;justify-items: start;width: auto;height: auto;border: none;}
+    #a{margin: 0px;height: auto;}
+    input,button{margin-left: 15px;}
+    
+    }
+</style>
+
+
+
+</head>
+<body>
+   <div class="con">
+    <div class="item1" id="a">
+        <h1>One Card</h1>
+        <p>india's best metal card . build with full-stack tech. backened with the simplicity,transparency, and giving back controls to user.</p>
+    </div>
+    <div class="item2" id="a">
+        <h1>Navigation</h1>
+       <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">offers</a></li>
+       </ul>
+        
+    </div>
+    <div class="item3" id="a"><h1>Support</h1>
+        <ul>
+    <li><a href="3">F.A.Q</a></li>
+    <li><a href="3">Cookies policy</a></li>
+    <li><a href="3">Terms of Service</a></li>
+    <li><a href="3">Support</a></li>
+</ul>
+    </div>
+    <div class="item4" id="a">
+        <h1>NEWSLETTER</h1>
+        <input type="email" name="email" id="#" placeholder="enter your email id">
+        <button>subscribe</button>
+    </div>
+   </div>
+</body>
+</html>
