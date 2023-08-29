@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query 5</title>
+    <style>
+.con{height: 600px;width: 1300px;border: solid black;display: grid;grid-template: repeat(3,1fr)/ repeat(3,1fr);grid-gap: 25px;}
+#a{border: solid black;height: 350px;border-radius: 25px;}
+.item1{background-image: url(https://media.istockphoto.com/id/529964085/photo/mango.jpg?s=612x612&w=0&k=20&c=rmcMZlLOZFdn4NhUcjnaJ3EBHKYZQ4xH4xzpzFU4JgY=);background-repeat: no-repeat;background-size: cover;}
+.item2{background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Culinary_fruits_front_view.jpg/500px-Culinary_fruits_front_view.jpg);background-repeat: no-repeat;background-size: cover;}
+.item3{background-image: url(https://cdn.britannica.com/17/196817-050-6A15DAC3/vegetables.jpg);background-repeat: no-repeat;background-size: cover;}
+.item4{background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b2/DriedfruitS.jpg);background-repeat: no-repeat;background-size: cover;}
+.item5{background-image: url(https://media.istockphoto.com/id/155376375/photo/fruit-juice.jpg?s=612x612&w=0&k=20&c=DHpot0a67oN-8lSW0CMI7Y4vLM-TlMBBqA7c5kCfrNo=);background-repeat: no-repeat;background-size: cover;}
+.item6{background-image: url(https://norecipes.com/wp-content/uploads/2017/05/chicken-biryani-006.jpg);background-repeat: no-repeat;background-size: cover;}
+/* styling for small screen */
+@media screen and (max-width:576px){
+.con{display: grid;grid-template-columns: repeat(1,1fr);width: auto;}
+
+}
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="item1" id="a"></div>
+        <div class="item2" id="a"></div>
+        <div class="item3" id="a"></div>
+        <div class="item4" id="a"></div>
+        <div class="item5" id="a"></div>
+        <div class="item6" id="a"></div>
+    </div>
+</body>
+</html>
